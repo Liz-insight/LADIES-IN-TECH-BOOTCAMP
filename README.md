@@ -27,11 +27,10 @@ Data Source:
 
 # Data Source: LADIES IN TECH AFRICA BOOTCAMP
 
+
 # Tools Used:
-Excel
-SQL Server
-Power BI
-Contributions:
+Excel,SQL Server, Power BI
+
 
 For more detailed instructions, refer to the specific project folders.
 https:https://github.com/Liz-insight/LADIES-IN-TECH-BOOTCAMP.git
