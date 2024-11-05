@@ -17,6 +17,8 @@ To Use:
 
 https:https://github.com/Liz-insight/LADIES-IN-TECH-BOOTCAMP.git
 
+Power BI link:https://app.powerbi.com/links/OEEd3ob1T5?ctid=b6e5e5cc-116f-40b8-8a91-89a5d79dd613&pbi_source=linkShare
+
 Set Up Environment:
 Install necessary tools like Excel, SQL Server, and Power BI.
 Run Analysis:
@@ -26,7 +28,6 @@ Create interactive dashboards using Power BI.
 Data Source:
 
 # Data Source: LADIES IN TECH AFRICA BOOTCAMP
-
 
 # Tools Used:
 Excel,SQL Server, Power BI
