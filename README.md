@@ -29,8 +29,7 @@ To Use:
 
 Clone the Repository:
 Bash
-git clone https://github.com/your-username/your-repo-name.git
-Use code with caution.
+git clone https:https://github.com/Liz-insight/LADIES-IN-TECH-BOOTCAMP.git
 
 Set Up Environment:
 Install necessary tools like Excel, SQL Server, and Power BI.
@@ -43,15 +42,6 @@ Note:
 This README provides a high-level overview of the projects.
 For more detailed instructions, refer to the specific project folders.
 Feel free to contribute to this repository by adding new insights, visualizations, or improvements.
-Remember to replace your-username and your-repo-name with your actual GitHub username and repository name.
-
-You can customize this README further by adding more specific details, such as:
-
-Data Source: Where the data was obtained.
-Tools and Technologies: A list of tools and technologies used in the project.
-Challenges and Solutions: Any challenges encountered and how they were addressed.
-Future Work: Potential future improvements or extensions to the project.
-By providing clear and concise information, you can help others understand your project, reproduce your results, and learn from your work.
 
 
 
