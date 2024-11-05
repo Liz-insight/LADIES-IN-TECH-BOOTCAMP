@@ -1,0 +1,65 @@
+-------------------------------
+
+---List operator------------------
+--IN
+--NOT IN
+
+
+SQL – Extract Key Insights
+loaded dataset into a SQL Server database, the SQL queries to extract the insights could be as follows:
+
+Total Sales for Each Product Category:
+SELECT Product, SUM(Quantity * UnitPrice) AS TotalSales
+FROM SalesData
+GROUP BY Product;
+
+
+Number of Sales Transactions in Each Region:
+SELECT Region, COUNT(OrderID) AS TransactionCount
+FROM SalesData
+GROUP BY Region;
+
+
+
+Highest-Selling Product by Total Sales Value:
+SELECT TOP 1 Product, SUM(Quantity * UnitPrice) AS TotalSales
+FROM SalesData
+GROUP BY Product
+ORDER BY TotalSales DESC;
+
+
+
+Monthly Sales Totals for the Current Year:
+Copy code
+SELECT MONTH(OrderDate) AS Month, SUM(Quantity * UnitPrice) AS TotalSales
+FROM SalesData
+WHERE YEAR(OrderDate) = YEAR(GETDATE())
+GROUP BY MONTH(OrderDate)
+ORDER BY Month;
+
+
+
+Top 5 Customers by Total Purchase Amount:
+SELECT TOP 5 CustomerId, SUM(Quantity * UnitPrice) AS TotalPurchase
+FROM SalesData
+GROUP BY CustomerId
+ORDER BY TotalPurchase DESC;
+
+
+
+Percentage of Total Sales Contributed by Each Region:
+SELECT Region, 
+       (SUM(Quantity * UnitPrice) * 100.0 / (SELECT SUM(Quantity * UnitPrice) FROM SalesData)) AS SalesPercentage
+FROM SalesData
+GROUP BY Region;
+
+
+
+Products with No Sales in the Last Quarter:
+SELECT Product
+FROM SalesData
+WHERE Product NOT IN (
+    SELECT DISTINCT Product
+    FROM SalesData
+    WHERE OrderDate >= DATEADD(QUARTER, -1, GETDATE())
+);
